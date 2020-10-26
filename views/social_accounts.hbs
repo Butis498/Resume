@@ -1,0 +1,15 @@
+{{> head}}
+{{> navbar }}
+<div class="card-deck" style="margin-left: 10%;margin-right: 10%;margin-top: 3%">
+{{#each socials}}
+<div class="card" style="width: 18rem;">
+  <img class="card-img"  src={{img}} alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title" style="color: black;">{{name}}</h5>
+    <a href={{url}} class="btn btn-primary">Visit Site</a>
+  </div>
+</div>
+{{/each}}
+</div>
+
+{{> footer}}

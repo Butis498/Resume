@@ -1,0 +1,61 @@
+{{> head}}
+{{> navbar }}
+<h1 class="tittle"></h1>
+<div class="PersonalData, items" id="personalData">
+    <h2>Personal Data</h2>
+    <p class="inner_content">
+
+        <br>Esteban Ricardo Salazar
+        <br>Computer Engineer
+        <br>estebansalazar498@gmail.com
+
+    </p>
+</div>
+<hr>
+<div class="items">
+    <h2 class="item_tittle">Experience</h2>
+    {{#each experiences_objects}}
+    <div class="inner_content">
+        <h3>{{company}}</h3>
+        <div style="margin-left: 2%;">
+            <h5>{{employer}}</h5>
+            <h5>{{startDate}}-{{endDate}}</h5>
+            <h5>{{place}}</h5>
+            <p>{{description}}</p>
+        </div>
+        
+    </div>
+    {{/each}}
+</div>
+<hr>
+<div class="items" id="skils">
+    <h2 class="item_tittle">Skills</h2>
+    <div class="inner_content" >
+        <p class="text, inner_content">{{skillsStr}}</p>
+    </div>
+    
+</div>
+<hr>
+<div class="items" id="projects">
+    <h2 class="item_tittle">Proyects</h2>
+    <div class="inner_content">
+        {{#each proyects_objects}}
+        <a href={{url}}><h3><u>{{Name}}</u></h3> </a>
+        <p class="text">
+            {{description}}
+        </p>
+        {{/each}}
+    </div>
+</div>
+<hr>
+<div class="items" id="studies">
+    <h2 class="item_tittle">Studies</h2>
+    <div class="inner_content">
+        <h3>ITC ( computer engineer ) </h3>
+        <h4>Tecnologico de Monterrey</h4>
+        <div class="text">
+            I am currently studying with a GPA average of 89 /100
+        </div>
+    </div>
+</div>
+{{> footer }}
